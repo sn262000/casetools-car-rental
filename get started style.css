@@ -1,0 +1,235 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(sky.jpg);
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.highway
+{
+	height: 200px;
+	width: 500%;
+	display: block;
+	background-image: url(road.jpg);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: highway 5s linear infinite;
+}
+@keyframes highway 
+{
+	100%{
+		transform: translatex(-3400px);
+	}10
+}
+.city{
+	height: 250px;
+	width: 500%;
+	background-image: url(city3.png);
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+@keyframes city 
+{
+	100%{
+		transform: translatex(-1400px);
+	}
+}
+
+
+.car
+{
+	width: 400px;
+	left: 38.3%;
+	bottom: -15.6%;
+	transform: translatex(-50%);
+	position: absolute;
+	z-index: 5;
+}
+.car img{
+	width: 200%;
+	animation: car 1s linear infinite;
+}
+@keyframe car 
+{
+	100%{
+		transform: translateY(-1px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-1px);
+	}
+}
+
+.wheel
+{
+	left: 50%;
+	bottom: 178px;
+	transform: translatex(-50%);
+	position: absolute;
+	z-index: 2;
+}
+.wheel img{
+	width: 119px;
+	height: 119px;
+	animation: wheel 1s linear infinite;
+}
+
+.back-wheel
+{
+	left: -240px;
+	position: absolute;
+}
+.front-wheel
+{
+	left: 170px;
+	position: absolute;
+}
+
+
+@keyframes wheel 
+{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+.leftmenu{
+	width: 20%;
+	line-height: 100px;
+	float: left;
+/*	background-color: yellow;*/
+}
+
+.leftmenu h4{
+	padding-left: 75px;
+	font-weight: bold;
+	color: black;
+	font-size: 42px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.rightmenu{
+	width:70%;
+	height: 100px;
+	float: right;
+/*	background-color: red; */
+}
+
+.rightmenu ul{
+	margin-left: 700px;
+}
+
+.rightmenu ul li {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration-color: black;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:black;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+
+}
+
+#fisrtlist{
+	color: orange;
+}
+
+.rightmenu ul li:hover{
+	color: orange;
+}
+
+
+.text{
+	width: 100%;
+	margin-top: 185px;
+	text-transform: uppercase;
+	text-align: center;
+	color:black;
+}
+
+.text h4{
+
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text h1{
+	font-size:42px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+}
+.text h3{
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#buttonone{
+	background-color: transparent;
+	border: none;
+	font-size: 19px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	width: 150px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 25px;
+	border: 3px solid white;
+}
+
+.aw{
+  text-decoration: none;
+  color: black;
+  background: rgba(29,171,209,1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size:10vw
+  text-transform: uppercase;
+  border-radius: 50%;
+  z-index: 6;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    box-shadow: 0 0 0 0 rgba(29,171,209,0.6), 0 0 0 0 rgba(29,171,209,0.6);
+  }
+  30%{
+    box-shadow: 0 0 0 50px rgba(29,171,209,0), 0 0 0 0 rgba(29,171,209,0.6);
+  }
+  65%{
+    box-shadow: 0 0 0 50px rgba(29,171,209,0), 0 0 0 30px rgba(29,171,209,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(29,171,209,0), 0 0 0 30px rgba(29,171,209,0);
+  }
+}
+
